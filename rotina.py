@@ -11,8 +11,10 @@ def validate(texto):
 
     if len(texto) != 11:
         return False
+    
     if all(c == texto[0] for c in texto):
         return False
+    
     try:
         d1, d2 = 0, 0
         dg1, dg2, rest = 0, 0, 0
